@@ -1,0 +1,609 @@
+{
+  "taskOper": "OR",
+  "groupByLayer": false,
+  "zoomto": true,
+  "zoombackto": true,
+  "allowCustom": true,
+  "allowResetAll": true,
+  "allowTurnOffAll": true,
+  "filters": [
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Performing Arts",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorContains",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Performing Arts"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY LIKE '%Performing Arts%'",
+            "expr": "CATEGORY LIKE '%Performing Arts%'"
+          }
+        ],
+        "expr": "CATEGORY LIKE '%Performing Arts%'",
+        "displaySQL": "CATEGORY LIKE '%Performing Arts%'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/LightBlueStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Museum",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Museum"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY = 'Museum'",
+            "expr": "CATEGORY = 'Museum'"
+          }
+        ],
+        "expr": "CATEGORY = 'Museum'",
+        "displaySQL": "CATEGORY = 'Museum'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/RedStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Featured Park",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Featured Park"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY = 'Featured Park'",
+            "expr": "CATEGORY = 'Featured Park'"
+          }
+        ],
+        "expr": "CATEGORY = 'Featured Park'",
+        "displaySQL": "CATEGORY = 'Featured Park'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/BlueStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Attraction",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Attraction"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY = 'Attraction'",
+            "expr": "CATEGORY = 'Attraction'"
+          }
+        ],
+        "expr": "CATEGORY = 'Attraction'",
+        "displaySQL": "CATEGORY = 'Attraction'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/YellowStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Landmark",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Landmark"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY = 'Landmark'",
+            "expr": "CATEGORY = 'Landmark'"
+          }
+        ],
+        "expr": "CATEGORY = 'Landmark'",
+        "displaySQL": "CATEGORY = 'Landmark'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/PurpleStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Beach",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Beach"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY = 'Beach'",
+            "expr": "CATEGORY = 'Beach'"
+          }
+        ],
+        "expr": "CATEGORY = 'Beach'",
+        "displaySQL": "CATEGORY = 'Beach'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/BrownStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Gallery",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Gallery"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY = 'Gallery'",
+            "expr": "CATEGORY = 'Gallery'"
+          }
+        ],
+        "expr": "CATEGORY = 'Gallery'",
+        "displaySQL": "CATEGORY = 'Gallery'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/PurpleStickpin.png",
+        "imageData": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7BAAAOwQG4kWvtAAAAGHRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuMzap5+IlAAANEklEQVR4Xu1ZC1CU57l2mnbmtLWdJk2mPdVMj5kknSTNNMl0eubMSdKpTazTZGKNxigXFVGxysV8IhFiNDEKcme5LHuBXfbGLgvswrK7LMtyUREiKkhQ8IaKSLkoEhQUAX3O+33GOTkZnZ5JdnGbyMwz37LL//7v87zXf5kx48HPAwUeKPBAgQcKPFBgmhX4+U/+MCNi9tuzdjz1t19tefr3/8YeJwd+Os1OTPvtHlo0J/GV+EXSDyXLZQ7DhpLjZayqzxpV3acNdRxPWaBxfvyaZtuS/0h4lTz7/rR758sbPvuDgBfSl+pUzg/Lh7r1n2LQ6UGfsxK9did6LG6cM+zDWXkbju7oRnHwwaH4P9o1Lz268iVf+jRtthc/GxtgYbaubkMjhuoc6G8wYPCADhcP6TB4UI+BRhN6qy04Y3HieF49jiefQHPURaj/cvTcsjkpgdPmqC9utOzZbSGuuKrhi/YmDDSU4VKbCSNdOoz2qDHWq8Io4epZLS53FGGguRw9bg9OkVDtKR1oiRqD8fXekSWzE1f7wjef23x1Tujrjug9/RcrDlOUHRjuMGP0ggbjlxS4MSLH5BU6CeOX5RjrU+HzEyYMNttwvrIeJ7UtOJJ0FofXA9pXBi7Of3TLX33usDdv8OSM+Y8pA12NfUUn0VtbjaE2C0bPawXZqVEVpq6VYOp6BZ1WTI5qSBAZZYRaiNS314UzJY04mtOJg1sH0RQEJL54rPl3Pwyb5U0ffWpr+e/iw5vjO9BTfgD9+x0UXSOuDyoxeTWPSBPxG824OXGMzlYSwo2psQKMD8lx5YxeZEG3fS86lZ/h0McX0BB2A5a5kwierdzkU6e9aPzH+Yub9p+Wn0G3rQEDn9qo7vWC4NSYHlPj+3Bz6gxu3bxEZzemJj4lUYoxMaLAaHcBLrZYqQzqcFx9BC07z6Nh/Ric84CPnmg/PHvGvEe86KdvTD09c/7LthXHhk7nduEcRXLwgE1E9gZP/zEjJidIgJsnMHWrF1P8nGzA5I1STFBpjPVpqVFa0OOqxYmCVrTsOo994WMo/xOQ/svr4y/PjPijb7z2otUVT0kibEFHbx5N6sBZy14MNDkwcspIGZCHies6Iusi0hT1m59hauowCeLB5LgJ46NqjA4WYvhkGS7U1KIzv40yoAf1oddQ9CKQNHMcbz2cxLzoqm9MbX+pandV0D/Qur0Dx/Pr0euhCdBpxrUhHW5QrU+Om0mEytvEJ6rod4r+NQ2uf67B1d4iDJ2oQF9TLZVAG5o298H513FonwRSZk5h1S/NEt947UWrn7zYIKl6ZwTNm7vwWUYjukrsGGwrxJVeDa5dzicR8jB5XUvEC+nUC/LjIwUYHTBg+HQxBloq0FPjQYfqAOpC+mF9eQrK2UDaT25h/eMVSi+66htTcc/uSbTNH8P+sH4c/vgIThpo7T1QhEudBRjpVmBsUIprw9kUccJwDsYuyUicPFw+pSXyRThfa8OpkhocVTajLnQQJkr/7IcByWM3EfGkNcs3XnvRavCvFUz7h6Fb9UuuoTHqNDryGyiiFeg/UIyL7ToMn8rH5+cUJIYMI+fkFHUlLh0rQP9BE3rqy9BV7kZnQROOpLejdvUgVE8AGT8Ccp8cR/DTaVu86KpvTL3w04Wv5z5zeaRqLlAbcImItOC01YPuKgcu7LOgv9mEgVZ6Hmij54AjBvQfMqJ3fwm6q23oKqtGp7YBbZlH0LzjJFyBA5D8jDLgEUD3ypWJN36z4S++8dq7Vn+WMOdca/HzgP3Pk2iMO4Z2VTU6jHacLLOgq7IIZz2FOFtrwNmaQpypMuGUrRTHzRU4qnKjRdKAph2tqGPtMM07j5QfAkYqg9x5LR3/OWfuL7zrqo+sLXtUFif991sofAZwBZxHU6ILB7OtaMkzo01nQLtRh3aThk4tPtPr0aoy4ZDUigPJTuzbVgf3xn2wrtyD3Od6oPg14Fl2FTFzU7aTu9/zkcveNfvcw/Mej3u0s11Jqat57joqw/eibrsde3fZsD/Fgsb0EjRJzGjMKMb+1FLsSyinz52o3uyGbZ0HpiA31G/ugeKZMdQtvQF1oKPj1VnLnvKulz62tuCxhEUJjwxflc4E8l68gJI1Htgiq+Hc5EFljBuuLYT33XBGV6MisgaWsFoYg2qhXuRB/tseaOd2Uw+5Ag9rGIuetyPAx+76xPxD7/4qKzp91uXxXGpkOc+fQ/7COmgCPNATUUNwHZ110C6rg2pxHRQLaiEnqJbUo/jdTjRu6EHDtpqJuL9tjSXvHvKJh9Ng9PtBT2VHZv924KLuN0DBS1che60F0jf2EfZC+mY9pG/tgXzhXuQv3Yui0EbUs2No23kINdtLL8cuiOVPgD+YBj99e4v5T0T+Oem/m1yaP/WOOt6cgjtgGPaQLlSsbYczogX1sYfQuqsVRxMPoWG3ecwYLXW/9ULIa771avqt/3jp81sXKxZVKQsCbE26YNuF4rWVI9Zw60gJU/datmZ8at4iyw/9r83vkGszp9+96b3jrLCQGEgSlAQF1qyMwYwZs2ZPrwv3+W6RbBtU+QaB9Ru3kgDfsZ8NRDpPqRdYF/nBd0+AdVEfQKHQCqyNiPvuCRAWGQeZTCOwOjz2uyfA6g1bIM1VQypVI3TD+19bgLqaKlbrcbHaaherEagiVArw9/nnftldQv8eg+wclUDI3zf/vwXgJKvdTuZ22ZnLaWOVjnLmsFu/QBlzVJQzewU/rcxpLxOfV1VWMA9d41dirAqLRlZWnsDKddH/VABOgBPhxCrKS1m5tZhZLWZmKTGx0mLjbZiNrMRsYsXipN/pM2tpkfhbu80iBON2/CIjQsI2QZJJewBhBb2+l1OeaqdwnBMoI8KcqNmkZ6ZCLSvUa5hBp2Z6rYrpNXQSdAWq29DQe/SZ0aBlRUa9uK68rFhkhF+IsGItQ3qGXGA5vb6bANVuh0htq6WIomogMhpBVqNWMlW+nOUrZUypkDKF/AvIpEyem8Pkshx6L4flKXKZOl9BYuSLa7kIPHt4Jt33LFi+hiE1TSZwNwF4ndsp3XkaGws1TEskOGklkZXlZjFpjoTlZGWw7Mx0lpWZRqBTwsFfp4nPcnMymYLE4NfpSDieObwceEbd934QvOY9JKdKBZav/b8lwLs3b2CcfCFFTq1SiIhyQpyoJCOVpacls/TUJJaWkshSU3bTyV8TUhPF+5L0FCFOrjRTZImGBDSZdKzMahYC3PcMCFq9EYnJOQI8G77sEI9+eVkJMxl1rIDSXS7LZtkU0QwixQmnJO9mKUkJAsmJ8QIpSbtZKr3PBcggcTJJJJ4F8txslp8nE/2gpLiQVdhK/aMHBIVGISExS+Crq7Db5aC6L2YGanL5eXIReU6IRzg58X9J3ybPhSDiyUkU+WQReZ4lIv0pa9SU/nodpX+RgdnKS1iVyw/qn0c7cFUk4ndnYhfhq6uwu5IEKCUBdCSAQs6kWZlELJUinMiSdscL3BYiQbwnIp6exrIlGUyaLbld9yQc7xtGmha8+XHyfHe476l/x4GAkAjsjM8Q+OoqzLc43q1NNL4KVEomk2ZRBqSJ9E/mqc9TnbKBi8LTXCbNpuaYK0jzCcHTnY8+viNwO7zmeV/xG/LckWUrwrFjV7rA3VZhV6WNWWiJMegKxDjjRHmkRY1/0eD4yFOJMcfnvY66vIEa5+1576AmyiNeW+NnxO9EgW+CH32SKnCvVZiTKDYXMk1Bnhh9fLxJMlJEffMdQK9Vi9rmo81p5yuvnRqcw78ifa+045vgto9TBO61CrtoYeGjkNfynTHIxxqfDEU0IURTo7+57zP969QW3wS3fpRMSLrnKszJlRabqK7zxCzn4DsBjzrPjn9J4nfE4rM/bluiwL1WYb4J8i7+ZfJFtM05aZ//OqL71TV8E4z9MEHgbgK4qZ6Li6j+Kfp81+eR54uR01H2r0+eR4Jvgu9/EC/w1VXY465k1hLz7dSn8ZankIkub7dZvx3khQC0CW6O3Snw5VWY1zV/hufzX0FPd5w8f8x10hcdfpXC39QZvglu2vKJAC+HO/b4Mz/v+nzs8Y2Oz3i+zHzT+/nd9XwTfC9mh0AwlQN3kD+o8Frnc56vtHyz48uQ3znvDYf4JhgV/ZFA8OooIQBfePic58/6fPuzlpq/neQ52SVB6xCxabtAUEi4ECAjnR5q6AuNPGWumPV+t797I/J3bLz97iqEv/chNhCWBoUJAbZv+0B82cHHnd/u8N4QIeb9WLy5MBAr10QhdB3D4qUhWL5yFTZvZrTm5vnHd3beIHo3G9lZEqzfEI43FixB4Ip1CF61HgvfCURg8HLExESjjL4I8dW9/cKuNCcTERGRWPD2EiwLXo3A5WuwaPG7WLNmLeJ37fyn/x/wCxLfxAn6qgtpaamI2vge1oatF9hIr5MSd8NYqP92R//LwikUMhHxXTs/gVyWe98i/z8GcNza/Ct6SAAAAABJRU5ErkJggg==",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Sports/Entertainment Venue",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Sports / Entertainment Venue"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY = 'Sports / Entertainment Venue'",
+            "expr": "CATEGORY = 'Sports / Entertainment Venue'"
+          }
+        ],
+        "expr": "CATEGORY = 'Sports / Entertainment Venue'",
+        "displaySQL": "CATEGORY = 'Sports / Entertainment Venue'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/BlueStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Garden / Conservatory",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorContains",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Garden / Conservatory"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY LIKE '%Garden / Conservatory%'",
+            "expr": "CATEGORY LIKE '%Garden / Conservatory%'"
+          }
+        ],
+        "expr": "CATEGORY LIKE '%Garden / Conservatory%'",
+        "displaySQL": "CATEGORY LIKE '%Garden / Conservatory%'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/SpringGreenStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Convention & Trade Centres",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorContains",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Convention &amp; Trade Centres"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY LIKE '%Convention &amp; Trade Centres%'",
+            "expr": "CATEGORY LIKE '%Convention &amp; Trade Centres%'"
+          }
+        ],
+        "expr": "CATEGORY LIKE '%Convention &amp; Trade Centres%'",
+        "displaySQL": "CATEGORY LIKE '%Convention &amp; Trade Centres%'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/BrownStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Transportation",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Transportation"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY = 'Transportation'",
+            "expr": "CATEGORY = 'Transportation'"
+          }
+        ],
+        "expr": "CATEGORY = 'Transportation'",
+        "displaySQL": "CATEGORY = 'Transportation'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/BlackStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Shopping",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Shopping"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY = 'Shopping'",
+            "expr": "CATEGORY = 'Shopping'"
+          }
+        ],
+        "expr": "CATEGORY = 'Shopping'",
+        "displaySQL": "CATEGORY = 'Shopping'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/BlackStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Places of interest City of Toronto_7905",
+      "url": "https://services7.arcgis.com/AHJOWTX3sFcnmA9U/arcgis/rest/services/Places%20of%20interest%20City%20of%20Toronto/FeatureServer/0",
+      "name": "Visitor Information",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CATEGORY",
+              "label": "CATEGORY",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": "Visitor Information"
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "CATEGORY = 'Visitor Information'",
+            "expr": "CATEGORY = 'Visitor Information'"
+          }
+        ],
+        "expr": "CATEGORY = 'Visitor Information'",
+        "displaySQL": "CATEGORY = 'Visitor Information'"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 12,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/GreenStickpin.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    }
+  ]
+}

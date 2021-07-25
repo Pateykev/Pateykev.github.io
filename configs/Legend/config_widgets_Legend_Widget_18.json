@@ -1,0 +1,17 @@
+{
+  "legend": {
+    "arrangement": 0,
+    "autoUpdate": true,
+    "respectCurrentMapScale": false
+  },
+  "layerState": {
+    "Places of interest City of Toronto_7905": {
+      "selected": true
+    },
+    "WebTiled_8037": {
+      "selected": true
+    }
+  },
+  "syncWithWebmap": false,
+  "showLegendForBasemap": true
+}
